@@ -1,0 +1,39 @@
+.app-wrap {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+.sign-in-button {
+  height: 60px;
+  width: 300px;
+  margin-top: 5%;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+}
+
+.sign-in-button::after {
+  content: "";
+  background-color: skyblue;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.sign-in-button:hover::after {
+  top: 0px;
+  left: 0px;
+}
